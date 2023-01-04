@@ -3,13 +3,12 @@ import Square from './Square'
 
 
 const Board = ({board ,handleSquareClick}) => {
- 
-    
     const renderSquare =position=>{
         return(
-        <Square value={board[position]} onClick={()=>{
-            handleSquareClick(position)}
-        }/>
+        <Square 
+        value={board[position]}
+         onClick={()=>handleSquareClick(position)}
+        />
         );
     };
   return (
@@ -31,7 +30,7 @@ const Board = ({board ,handleSquareClick}) => {
         </div>
     
     </div>
-  )
-}
+  );
+};
 
-export default Board
+export default Board;
