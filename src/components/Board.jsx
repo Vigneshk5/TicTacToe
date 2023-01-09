@@ -2,12 +2,14 @@ import React from 'react'
 import Square from './Square'
 
 
-const Board = ({board ,handleSquareClick}) => {
+const Board = ({board ,handleSquareClick,winningCombination}) => {
     const renderSquare =position=>{
+      const isWinningC = winningCombination.includes(position);
         return(
         <Square 
         value={board[position]}
          onClick={()=>handleSquareClick(position)}
+         isWinningC={isWinningC}
         />
         );
     };
