@@ -30,7 +30,6 @@ const Board = ({board ,handleSquareClick,winningCombination}) => {
         {renderSquare(7)}
         {renderSquare(8)}
         </div>
-    
     </div>
   );
 };
